@@ -1,0 +1,16 @@
+MetaFileClass {
+ Name "{AD7B0486223F2C05}WillowGlade/WG_Crafting/gui/data/crafticon.edds"
+ Author "desktop-c8ct5up"
+ ChangeDate 461088952
+ Configurations {
+  PNGResourceClass PC {
+   SourceFile "crafticon.png"
+  }
+  PNGResourceClass XBOX_ONE : PC {
+  }
+  PNGResourceClass PS4 : PC {
+  }
+  PNGResourceClass LINUX : PC {
+  }
+ }
+}

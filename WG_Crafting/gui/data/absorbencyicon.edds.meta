@@ -1,0 +1,16 @@
+MetaFileClass {
+ Name "{87D15378D676414B}WillowGlade/WG_Crafting/gui/data/absorbencyicon.edds"
+ Author "desktop-c8ct5up"
+ ChangeDate 1567860920
+ Configurations {
+  PNGResourceClass PC {
+   SourceFile "absorbencyicon.png"
+  }
+  PNGResourceClass XBOX_ONE : PC {
+  }
+  PNGResourceClass PS4 : PC {
+  }
+  PNGResourceClass LINUX : PC {
+  }
+ }
+}

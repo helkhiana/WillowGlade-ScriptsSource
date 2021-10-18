@@ -1,0 +1,58 @@
+<WidgetStyles>
+    <Widget Name="XComboBoxWidget">
+        <Style Name="Custom" Font="gui/fonts/MetronBook" ImageSet="rover_imageset" Color="4294967295">
+            <State Name="Normal">
+                <Item Name="LeftTop" Image="" />
+                <Item Name="Top" Image="" />
+                <Item Name="RightTop" Image="" />
+                <Item Name="Right" Image="" />
+                <Item Name="RightBottom" Image="" />
+                <Item Name="Bottom" Image="" />
+                <Item Name="LeftBottom" Image="" />
+                <Item Name="Center" Image="" />
+                <Item Name="Left" Image="" />
+                <Item Name="ArrowLeft" Image="ArrowLeft" />
+                <Item Name="ArrowRight" Image="ArrowRight" />
+            </State>
+            <State Name="Disabled">
+                <Item Name="LeftTop" Image="" />
+                <Item Name="Top" Image="" />
+                <Item Name="RightTop" Image="" />
+                <Item Name="Right" Image="" />
+                <Item Name="RightBottom" Image="" />
+                <Item Name="Bottom" Image="" />
+                <Item Name="LeftBottom" Image="" />
+                <Item Name="Center" Image="" />
+                <Item Name="Left" Image="" />
+                <Item Name="ArrowLeft" Image="ArrowLeftBlack" />
+                <Item Name="ArrowRight" Image="ArrowRightBlack" />
+            </State>
+            <State Name="Focus">
+                <Item Name="LeftTop" Image="" />
+                <Item Name="Top" Image="" />
+                <Item Name="RightTop" Image="" />
+                <Item Name="Right" Image="" />
+                <Item Name="RightBottom" Image="" />
+                <Item Name="Bottom" Image="" />
+                <Item Name="LeftBottom" Image="" />
+                <Item Name="Center" Image="" />
+                <Item Name="Left" Image="" />
+                <Item Name="ArrowLeft" Image="ArrowLeft" />
+                <Item Name="ArrowRight" Image="ArrowRight" />
+            </State>
+            <State Name="Highlight">
+                <Item Name="LeftTop" Image="" />
+                <Item Name="Top" Image="" />
+                <Item Name="RightTop" Image="" />
+                <Item Name="Right" Image="" />
+                <Item Name="RightBottom" Image="" />
+                <Item Name="Bottom" Image="" />
+                <Item Name="LeftBottom" Image="" />
+                <Item Name="Center" Image="" />
+                <Item Name="Left" Image="" />
+                <Item Name="ArrowLeft" Image="ArrowLeft" />
+                <Item Name="ArrowRight" Image="ArrowRight" />
+            </State>
+        </Style>
+    </Widget>
+</WidgetStyles>

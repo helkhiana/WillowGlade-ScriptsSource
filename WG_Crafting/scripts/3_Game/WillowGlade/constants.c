@@ -1,0 +1,1 @@
+static const int CRAFTING_UI_MENU  = 1214001;

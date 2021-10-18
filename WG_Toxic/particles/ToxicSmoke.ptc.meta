@@ -1,0 +1,15 @@
+MetaFileClass {
+ Name "{7DB418FBC180ED2A}WillowGlade/WG_Toxic/particles/ToxicSmoke.ptc"
+ Author "desktop-c8ct5up"
+ ChangeDate 1181919466
+ Configurations {
+  PTCResourceClass PC {
+  }
+  PTCResourceClass XBOX_ONE : PC {
+  }
+  PTCResourceClass PS4 : PC {
+  }
+  PTCResourceClass LINUX : PC {
+  }
+ }
+}

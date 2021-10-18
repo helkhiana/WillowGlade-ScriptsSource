@@ -1,0 +1,16 @@
+MetaFileClass {
+ Name "{F31368891C87E4DE}WillowGlade/WG_Crafting/gui/data/weighticon.edds"
+ Author "desktop-c8ct5up"
+ ChangeDate 1803266232
+ Configurations {
+  PNGResourceClass PC {
+   SourceFile "weighticon.png"
+  }
+  PNGResourceClass XBOX_ONE : PC {
+  }
+  PNGResourceClass PS4 : PC {
+  }
+  PNGResourceClass LINUX : PC {
+  }
+ }
+}

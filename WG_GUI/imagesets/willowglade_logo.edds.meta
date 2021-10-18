@@ -1,0 +1,16 @@
+MetaFileClass {
+ Name "{EF2DF2F798E4CD39}WillowGlade/WG_GUI/imagesets/willowglade_logo.edds"
+ Author "desktop-c8ct5up"
+ ChangeDate 565012666
+ Configurations {
+  PNGResourceClass PC {
+   SourceFile "willowglade_logo.png"
+  }
+  PNGResourceClass XBOX_ONE : PC {
+  }
+  PNGResourceClass PS4 : PC {
+  }
+  PNGResourceClass LINUX : PC {
+  }
+ }
+}

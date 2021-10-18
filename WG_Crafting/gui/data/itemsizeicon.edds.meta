@@ -1,0 +1,16 @@
+MetaFileClass {
+ Name "{6F72440163C184E3}WillowGlade/WG_Crafting/gui/data/itemsizeicon.edds"
+ Author "desktop-c8ct5up"
+ ChangeDate 1266395320
+ Configurations {
+  PNGResourceClass PC {
+   SourceFile "itemsizeicon.png"
+  }
+  PNGResourceClass XBOX_ONE : PC {
+  }
+  PNGResourceClass PS4 : PC {
+  }
+  PNGResourceClass LINUX : PC {
+  }
+ }
+}

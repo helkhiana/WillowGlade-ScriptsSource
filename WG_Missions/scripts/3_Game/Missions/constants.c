@@ -1,0 +1,1 @@
+static const int MISSIONTEXT_UI  = 1214006;

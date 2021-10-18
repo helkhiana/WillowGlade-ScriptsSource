@@ -1,0 +1,1 @@
+class Firewood_Log : Firewood {};

@@ -1,0 +1,1474 @@
+FrameWidgetClass CraftingUI {
+ position 0 0
+ size 1 1
+ halign center_ref
+ valign center_ref
+ hexactpos 0
+ vexactpos 0
+ hexactsize 0
+ vexactsize 0
+ {
+  ImageWidgetClass vignette {
+   visible 1
+   ignorepointer 0
+   color 0 0 0 0.9137
+   position 0 0
+   size 1.6 0.9
+   halign center_ref
+   hexactpos 1
+   vexactpos 1
+   hexactsize 0
+   vexactsize 0
+   scaled 0
+   fixaspect outside
+   imageTexture "{E6B3EF816E067499}Gui/textures/inventory_bgvignette.edds"
+   mode blend
+   "src alpha" 1
+   "no wrap" 1
+   stretch 1
+   filter 0
+   nocache 1
+  }
+  FrameWidgetClass WindowWidget {
+   ignorepointer 0
+   position 0 0
+   size 1 1
+   halign center_ref
+   valign center_ref
+   hexactpos 0
+   vexactpos 0
+   hexactsize 0
+   vexactsize 0
+   priority 1
+   {
+    FrameWidgetClass BackPanelWidget {
+     visible 1
+     size 1.6 0.9
+     halign center_ref
+     valign center_ref
+     hexactpos 0
+     vexactpos 0
+     hexactsize 0
+     vexactsize 0
+     fixaspect inside
+     priority 1
+     {
+      FrameWidgetClass CraftingFrame {
+       ignorepointer 0
+       size 0.9 0.9
+       halign center_ref
+       valign center_ref
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       {
+        ImageWidgetClass img_UITitle {
+         visible 1
+         clipchildren 0
+         keepsafezone 0
+         color 0 0 0 0.7843
+         size 1 0.045
+         halign center_ref
+         hexactpos 0
+         vexactpos 0
+         hexactsize 0
+         vexactsize 0
+         scaled 1
+         priority 1
+         draggable 0
+         image0 "set:dayz_gui image:inv_header_3"
+         mode blend
+         "src alpha" 1
+         "no wrap" 1
+         stretch 1
+         {
+          TextWidgetClass txt_UITitle {
+           position 0 0
+           size 1 1
+           halign center_ref
+           hexactpos 0
+           vexactpos 0
+           hexactsize 0
+           vexactsize 0
+           priority 1
+           style Normal
+           text "Crafting"
+           font "gui/fonts/etelkatextpro28"
+           "text offset" 10 0
+           "exact text" 0
+           text_proportion 0.55
+           "text halign" center
+           "text valign" center
+           {
+            ButtonWidgetClass btn_UIClose {
+             visible 1
+             disabled 0
+             clipchildren 1
+             inheritalpha 0
+             ignorepointer 0
+             keepsafezone 0
+             color 0.8824 0.8824 0.8824 0
+             position 0.01 0
+             size 0.8 0.8
+             halign right_ref
+             valign center_ref
+             hexactpos 0
+             vexactpos 0
+             hexactsize 0
+             vexactsize 0
+             fixaspect fixwidth
+             priority 1
+             userID 2
+             style Default
+             "no focus" 1
+             text_offset 1 1
+             text_halign center
+             "text color" 1 1 1 1
+             switch normal
+             {
+              ImageWidgetClass icon_Close {
+               visible 1
+               ignorepointer 1
+               position 0 0
+               size 0.8 0.8
+               halign center_ref
+               valign center_ref
+               hexactpos 0
+               vexactpos 0
+               hexactsize 0
+               vexactsize 0
+               priority 1
+               image0 "set:dayz_gui image:icon_x"
+               mode additive
+               "src alpha" 1
+              }
+             }
+            }
+           }
+          }
+         }
+        }
+        GridSpacerWidgetClass GridSpacerWidget1 {
+         ignorepointer 1
+         position 0.00086 0
+         size 1 0.94
+         halign center_ref
+         valign bottom_ref
+         hexactpos 0
+         vexactpos 0
+         hexactsize 0
+         vexactsize 0
+         Padding 20
+         Rows 1
+         {
+          FrameWidgetClass LeftSideFrame {
+           ignorepointer 1
+           position 0 0
+           size 1 1
+           valign center_ref
+           hexactpos 0
+           vexactpos 0
+           hexactsize 0
+           vexactsize 0
+           {
+            ImageWidgetClass SearchBoxPanel {
+             visible 1
+             ignorepointer 1
+             color 0.5294 0.5333 0.5412 0.8
+             position 0 0.08
+             size 1 0.055
+             halign center_ref
+             hexactpos 0
+             vexactpos 0
+             hexactsize 0
+             vexactsize 0
+             image0 "set:dayz_gui image:inv_header_2"
+             mode blend
+             "src alpha" 1
+             "no wrap" 1
+             stretch 1
+             {
+              ImageWidgetClass img_SearchBox {
+               ignorepointer 1
+               position 0.015 0
+               size 35 35
+               valign center_ref
+               hexactpos 0
+               vexactpos 0
+               hexactsize 1
+               vexactsize 1
+               image0 "WillowGlade/WG_Crafting/gui/data/search.edds"
+               imageTexture "{EB6ABB2695D1E0A3}WillowGlade/WG_Melee/gui/data/search.edds"
+               mode blend
+               "src alpha" 1
+               stretch 1
+              }
+              PanelWidgetClass SearchOutlinePanel {
+               clipchildren 0
+               ignorepointer 1
+               keepsafezone 1
+               color 0 0 0 1
+               position 0.03 0.01
+               size 0.87 0.7
+               halign right_ref
+               valign center_ref
+               hexactpos 0
+               vexactpos 0
+               hexactsize 0
+               vexactsize 0
+               scaled 1
+               style editor_quad
+               {
+                EditBoxWidgetClass SearchBox {
+                 keepsafezone 1
+                 size 0.98 0.8
+                 halign center_ref
+                 valign center_ref
+                 hexactpos 0
+                 vexactpos 0
+                 hexactsize 0
+                 vexactsize 0
+                 scaled 1
+                 style ServerBrowser
+                }
+               }
+              }
+             }
+            }
+            FrameWidgetClass RecipesFrame {
+             ignorepointer 1
+             position 0 0
+             size 1 0.92
+             halign center_ref
+             valign bottom_ref
+             hexactpos 0
+             vexactpos 0
+             hexactsize 0
+             vexactsize 0
+             {
+              PanelWidgetClass RecipesBody {
+               visible 1
+               ignorepointer 1
+               color 0.4745 0.4745 0.4745 0.8627
+               size 1 0.942
+               halign center_ref
+               valign bottom_ref
+               hexactpos 0
+               vexactpos 0
+               hexactsize 0
+               vexactsize 0
+               style ToolbarWidget
+               {
+                TextListboxWidgetClass RecipesList {
+                 clipchildren 0
+                 inheritalpha 0
+                 ignorepointer 0
+                 keepsafezone 0
+                 color 0 0 0 1
+                 position 0.007 0
+                 size 0.98 1
+                 halign center_ref
+                 valign center_ref
+                 hexactpos 0
+                 vexactpos 0
+                 hexactsize 0
+                 vexactsize 0
+                 scaled 1
+                 style Default
+                 "title visible" 0
+                 colums "\"space;3;list;97\""
+                 lines 50
+                 "highlight row" 1
+                 font "gui/fonts/etelkatextpro22"
+                 "disabled text color" 1 0 0 1
+                }
+               }
+              }
+             }
+            }
+            ImageWidgetClass RecipesTitle {
+             ignorepointer 1
+             color 0.5294 0.5333 0.5412 0.8
+             size 1 0.05
+             halign center_ref
+             hexactpos 0
+             vexactpos 0
+             hexactsize 0
+             vexactsize 0
+             image0 "set:dayz_gui image:inv_header_2"
+             mode blend
+             "src alpha" 1
+             "no wrap" 1
+             stretch 1
+             {
+              TextWidgetClass txt_RecipesTitle {
+               ignorepointer 1
+               position 0.007 0.15
+               size 500 50
+               hexactpos 0
+               vexactpos 0
+               hexactsize 1
+               vexactsize 1
+               text "Recipes"
+               font "gui/fonts/etelkatextpro28"
+               "text offset" 10 5
+              }
+             }
+            }
+           }
+          }
+          FrameWidgetClass MidFrame {
+           ignorepointer 1
+           size 1 1
+           halign center_ref
+           valign center_ref
+           hexactpos 0
+           vexactpos 0
+           hexactsize 0
+           vexactsize 0
+           {
+            ImageWidgetClass ItemTitle {
+             ignorepointer 1
+             color 0.5294 0.5333 0.5412 0.8
+             size 1 0.05
+             hexactpos 0
+             vexactpos 0
+             hexactsize 0
+             vexactsize 0
+             image0 "set:dayz_gui image:inv_header_2"
+             mode blend
+             "src alpha" 1
+             "no wrap" 1
+             stretch 1
+             {
+              TextWidgetClass txt_RequirementsTitle2 {
+               ignorepointer 1
+               position 0.007 0.15
+               size 1000 50
+               hexactpos 0
+               vexactpos 0
+               hexactsize 1
+               vexactsize 1
+               text "Item"
+               font "gui/fonts/etelkatextpro28"
+               "text offset" 10 5
+              }
+             }
+            }
+            FrameWidgetClass PreviewFrame {
+             ignorepointer 1
+             position 0 0.08
+             size 1 0.5
+             hexactpos 0
+             vexactpos 0
+             hexactsize 0
+             vexactsize 0
+             {
+              PanelWidgetClass PreviewBody {
+               visible 1
+               clipchildren 1
+               inheritalpha 0
+               ignorepointer 1
+               color 0.4745 0.4745 0.4745 0.8627
+               position 0 0
+               size 1 1.02
+               halign center_ref
+               valign bottom_ref
+               hexactpos 0
+               vexactpos 0
+               hexactsize 0
+               vexactsize 0
+               scaled 1
+               style ToolbarWidget
+              }
+             }
+            }
+            FrameWidgetClass ItemStatsFrame {
+             visible 1
+             ignorepointer 1
+             position 0 0.21
+             size 1 0.24
+             valign center_ref
+             hexactpos 0
+             vexactpos 0
+             hexactsize 0
+             vexactsize 0
+             {
+              PanelWidgetClass ItemStatsBody {
+               visible 1
+               clipchildren 1
+               inheritalpha 0
+               ignorepointer 1
+               color 0.4745 0.4745 0.4745 0.8627
+               size 1 1
+               hexactpos 0
+               vexactpos 0
+               hexactsize 0
+               vexactsize 0
+               scaled 1
+               style ToolbarWidget
+               {
+                MultilineTextWidgetClass PreviewDescription {
+                 visible 1
+                 inheritalpha 0
+                 ignorepointer 1
+                 size 0.98 0.95
+                 halign center_ref
+                 valign bottom_ref
+                 hexactpos 0
+                 vexactpos 0
+                 hexactsize 0
+                 vexactsize 0
+                 text "A box of large kitchen matches. Contains 250 matches. Store in dry place and keep away from children."
+                 font "gui/fonts/etelkatextpro22"
+                 "exact text" 1
+                 "size to text h" 1
+                 wrap 1
+                 "condense whitespace" 1
+                }
+               }
+              }
+             }
+            }
+            FrameWidgetClass ResultStatsFrame {
+             visible 1
+             ignorepointer 1
+             position 0 0.42
+             size 1 0.16
+             valign center_ref
+             hexactpos 0
+             vexactpos 0
+             hexactsize 0
+             vexactsize 0
+             {
+              PanelWidgetClass ResultStatsBody {
+               visible 1
+               clipchildren 1
+               inheritalpha 0
+               ignorepointer 1
+               color 0.4745 0.4745 0.4745 0.8627
+               size 1 1
+               hexactpos 0
+               vexactpos 0
+               hexactsize 0
+               vexactsize 0
+               scaled 1
+               style ToolbarWidget
+              }
+              TextWidgetClass ResultsTitle {
+               ignorepointer 1
+               position 0.02 0.05
+               size 0.4 0.16
+               hexactpos 0
+               vexactpos 0
+               hexactsize 0
+               vexactsize 0
+               style Bold
+               text "Item Stats"
+               font "gui/fonts/etelkatextpro22"
+               "exact text" 0
+               "size to text h" 0
+               "text valign" center
+              }
+              PanelWidgetClass ResultQuantPanel {
+               ignorepointer 1
+               color 0.0157 0.0157 0.0157 0.6667
+               position 0 0.25
+               size 1 0.15
+               hexactpos 0
+               vexactpos 0
+               hexactsize 0
+               vexactsize 0
+               style DayZDefaultPanelBottom
+               {
+                TextWidgetClass ResultQuantityTitle {
+                 ignorepointer 1
+                 position 0.02 0
+                 size 0.4 1
+                 hexactpos 0
+                 vexactpos 0
+                 hexactsize 0
+                 vexactsize 0
+                 style Bold
+                 text "Result Quantity:"
+                 font "gui/fonts/etelkatextpro22"
+                 "exact text" 0
+                 "size to text h" 0
+                 "text valign" center
+                }
+                TextWidgetClass ResultQuantity {
+                 ignorepointer 1
+                 size 0.4 1
+                 halign center_ref
+                 valign center_ref
+                 hexactpos 0
+                 vexactpos 0
+                 hexactsize 0
+                 vexactsize 0
+                 text "50"
+                 font "gui/fonts/etelkatextpro22"
+                 "text valign" center
+                }
+               }
+              }
+             }
+            }
+           }
+          }
+          FrameWidgetClass RightSideFrame {
+           ignorepointer 1
+           size 1 1
+           halign right_ref
+           valign center_ref
+           hexactpos 0
+           vexactpos 0
+           hexactsize 0
+           vexactsize 0
+           {
+            ImageWidgetClass RequirementsTitle {
+             ignorepointer 1
+             color 0.5294 0.5333 0.5412 0.8
+             position 0 0
+             size 1 0.05
+             halign center_ref
+             hexactpos 0
+             vexactpos 0
+             hexactsize 0
+             vexactsize 0
+             image0 "set:dayz_gui image:inv_header_2"
+             mode blend
+             "src alpha" 1
+             "no wrap" 1
+             stretch 1
+             {
+              TextWidgetClass txt_RequirementsTitle {
+               ignorepointer 1
+               position 0.007 0.15
+               size 1000 50
+               hexactpos 0
+               vexactpos 0
+               hexactsize 1
+               vexactsize 1
+               text "Recipe Requirements"
+               font "gui/fonts/etelkatextpro28"
+               "text offset" 10 5
+              }
+             }
+            }
+            PanelWidgetClass RequirementsBody {
+             visible 1
+             ignorepointer 1
+             color 0.5294 0.5294 0.5451 0.8667
+             position 0 -0.04
+             size 1 0.96
+             halign center_ref
+             valign bottom_ref
+             hexactpos 0
+             vexactpos 0
+             hexactsize 0
+             vexactsize 0
+             scaled 1
+             style blank
+             "next up" ""
+             {
+              GridSpacerWidgetClass GridSpacerWidget0 {
+               ignorepointer 1
+               position 0 0
+               size 1 0.78
+               halign center_ref
+               hexactpos 1
+               vexactpos 1
+               hexactsize 0
+               vexactsize 0
+               style Colorable
+               Padding 3
+               Margin 0
+               {
+                PanelWidgetClass reqFrame0 {
+                 visible 1
+                 inheritalpha 0
+                 ignorepointer 0
+                 color 0.5294 0.5333 0.5412 0.6275
+                 position 10 10
+                 size 48 48
+                 hexactpos 1
+                 vexactpos 1
+                 hexactsize 1
+                 vexactsize 1
+                 style editor_quad_dark
+                 {
+                  PanelWidgetClass PanelTitle {
+                   visible 1
+                   ignorepointer 0
+                   color 0.0157 0.0157 0.0157 0.6667
+                   position 0.01772 0.02245
+                   size 0.96616 0.11548
+                   hexactpos 0
+                   vexactpos 0
+                   hexactsize 0
+                   vexactsize 0
+                   style DayZDefaultPanelBottom
+                  }
+                  PanelWidgetClass PanelStockcCount {
+                   visible 1
+                   ignorepointer 1
+                   color 0.0157 0.0157 0.0157 0.6667
+                   position 0.01847 0.86181
+                   size 0.96408 0.10902
+                   hexactpos 0
+                   vexactpos 0
+                   hexactsize 0
+                   vexactsize 0
+                   style DayZDefaultPanelBottom
+                   {
+                    TextWidgetClass StockCountTitle {
+                     ignorepointer 1
+                     position 0.02 0.04
+                     size 0.55 0.9
+                     hexactpos 0
+                     vexactpos 0
+                     hexactsize 0
+                     vexactsize 0
+                     style Bold
+                     text "AMOUNT"
+                     font "gui/fonts/etelkatextpro22"
+                     "exact text" 0
+                     "size to text h" 0
+                     "text valign" center
+                    }
+                    TextWidgetClass reqQuant0 {
+                     ignorepointer 1
+                     position 0.56 0
+                     size 0.5 0.9
+                     hexactpos 0
+                     vexactpos 0
+                     hexactsize 0
+                     vexactsize 0
+                     text "50/100"
+                     font "gui/fonts/etelkatextpro22"
+                     "text valign" center
+                    }
+                   }
+                  }
+                  PanelWidgetClass reqPreview0 {
+                   visible 1
+                   ignorepointer 1
+                   position 0 0.15
+                   size 1 0.7
+                   halign center_ref
+                   hexactpos 0
+                   vexactpos 0
+                   hexactsize 0
+                   vexactsize 0
+                  }
+                 }
+                }
+                PanelWidgetClass reqFrame1 {
+                 visible 1
+                 ignorepointer 1
+                 color 0.5294 0.5333 0.5412 0.6275
+                 position 10 10
+                 size 48 48
+                 hexactpos 1
+                 vexactpos 1
+                 hexactsize 1
+                 vexactsize 1
+                 style editor_quad_dark
+                 {
+                  PanelWidgetClass PanelTitle0 {
+                   visible 1
+                   ignorepointer 1
+                   color 0.0157 0.0157 0.0157 0.6667
+                   position 0.01772 0.02245
+                   size 0.96616 0.11548
+                   hexactpos 0
+                   vexactpos 0
+                   hexactsize 0
+                   vexactsize 0
+                   style DayZDefaultPanelBottom
+                  }
+                  PanelWidgetClass PanelStockcCount0 {
+                   ignorepointer 1
+                   color 0.0157 0.0157 0.0157 0.6667
+                   position 0.01847 0.86181
+                   size 0.96408 0.10902
+                   hexactpos 0
+                   vexactpos 0
+                   hexactsize 0
+                   vexactsize 0
+                   style DayZDefaultPanelBottom
+                   {
+                    TextWidgetClass StockCountTitle0 {
+                     ignorepointer 1
+                     position 0.02 0.04
+                     size 0.55 0.9
+                     hexactpos 0
+                     vexactpos 0
+                     hexactsize 0
+                     vexactsize 0
+                     style Bold
+                     text "AMOUNT"
+                     font "gui/fonts/etelkatextpro22"
+                     "exact text" 0
+                     "size to text h" 0
+                     "text valign" center
+                    }
+                    TextWidgetClass reqQuant1 {
+                     ignorepointer 1
+                     position 0.56 0
+                     size 0.5 0.9
+                     hexactpos 0
+                     vexactpos 0
+                     hexactsize 0
+                     vexactsize 0
+                     text "50/100"
+                     font "gui/fonts/etelkatextpro22"
+                     "text valign" center
+                    }
+                   }
+                  }
+                  PanelWidgetClass reqPreview1 {
+                   visible 1
+                   ignorepointer 1
+                   position 0 0.15
+                   size 1 0.7
+                   halign center_ref
+                   hexactpos 0
+                   vexactpos 0
+                   hexactsize 0
+                   vexactsize 0
+                  }
+                 }
+                }
+                PanelWidgetClass reqFrame2 {
+                 visible 1
+                 ignorepointer 1
+                 color 0.5294 0.5333 0.5412 0.6275
+                 position 10 10
+                 size 48 48
+                 hexactpos 1
+                 vexactpos 1
+                 hexactsize 1
+                 vexactsize 1
+                 style editor_quad_dark
+                 {
+                  PanelWidgetClass PanelTitle1 {
+                   visible 1
+                   ignorepointer 1
+                   color 0.0157 0.0157 0.0157 0.6667
+                   position 0.01772 0.02245
+                   size 0.96616 0.11548
+                   hexactpos 0
+                   vexactpos 0
+                   hexactsize 0
+                   vexactsize 0
+                   style DayZDefaultPanelBottom
+                  }
+                  PanelWidgetClass PanelStockcCount1 {
+                   ignorepointer 1
+                   color 0.0157 0.0157 0.0157 0.6667
+                   position 0.01847 0.86181
+                   size 0.96408 0.10902
+                   hexactpos 0
+                   vexactpos 0
+                   hexactsize 0
+                   vexactsize 0
+                   style DayZDefaultPanelBottom
+                   {
+                    TextWidgetClass StockCountTitle1 {
+                     ignorepointer 1
+                     position 0.02 0.04
+                     size 0.55 0.9
+                     hexactpos 0
+                     vexactpos 0
+                     hexactsize 0
+                     vexactsize 0
+                     style Bold
+                     text "AMOUNT"
+                     font "gui/fonts/etelkatextpro22"
+                     "exact text" 0
+                     "size to text h" 0
+                     "text valign" center
+                    }
+                    TextWidgetClass reqQuant2 {
+                     ignorepointer 1
+                     position 0.56 0
+                     size 0.5 0.9
+                     hexactpos 0
+                     vexactpos 0
+                     hexactsize 0
+                     vexactsize 0
+                     text "50/100"
+                     font "gui/fonts/etelkatextpro22"
+                     "text valign" center
+                    }
+                   }
+                  }
+                  PanelWidgetClass reqPreview2 {
+                   visible 1
+                   ignorepointer 1
+                   position 0 0.15
+                   size 1 0.7
+                   halign center_ref
+                   hexactpos 0
+                   vexactpos 0
+                   hexactsize 0
+                   vexactsize 0
+                  }
+                 }
+                }
+                PanelWidgetClass reqFrame3 {
+                 visible 1
+                 ignorepointer 1
+                 color 0.5294 0.5333 0.5412 0.6275
+                 position 10 10
+                 size 48 48
+                 hexactpos 1
+                 vexactpos 1
+                 hexactsize 1
+                 vexactsize 1
+                 style editor_quad_dark
+                 {
+                  PanelWidgetClass PanelTitle2 {
+                   visible 1
+                   ignorepointer 1
+                   color 0.0157 0.0157 0.0157 0.6667
+                   position 0.01772 0.02245
+                   size 0.96616 0.11548
+                   hexactpos 0
+                   vexactpos 0
+                   hexactsize 0
+                   vexactsize 0
+                   style DayZDefaultPanelBottom
+                  }
+                  PanelWidgetClass PanelStockcCount2 {
+                   ignorepointer 1
+                   color 0.0157 0.0157 0.0157 0.6667
+                   position 0.01847 0.86181
+                   size 0.96408 0.10902
+                   hexactpos 0
+                   vexactpos 0
+                   hexactsize 0
+                   vexactsize 0
+                   style DayZDefaultPanelBottom
+                   {
+                    TextWidgetClass StockCountTitle2 {
+                     ignorepointer 1
+                     position 0.02 0.04
+                     size 0.55 0.9
+                     hexactpos 0
+                     vexactpos 0
+                     hexactsize 0
+                     vexactsize 0
+                     style Bold
+                     text "AMOUNT"
+                     font "gui/fonts/etelkatextpro22"
+                     "exact text" 0
+                     "size to text h" 0
+                     "text valign" center
+                    }
+                    TextWidgetClass reqQuant3 {
+                     ignorepointer 1
+                     position 0.56 0
+                     size 0.5 0.9
+                     hexactpos 0
+                     vexactpos 0
+                     hexactsize 0
+                     vexactsize 0
+                     text "50/100"
+                     font "gui/fonts/etelkatextpro22"
+                     "text valign" center
+                    }
+                   }
+                  }
+                  PanelWidgetClass reqPreview3 {
+                   visible 1
+                   ignorepointer 1
+                   position 0 0.15
+                   size 1 0.7
+                   halign center_ref
+                   hexactpos 0
+                   vexactpos 0
+                   hexactsize 0
+                   vexactsize 0
+                  }
+                 }
+                }
+                PanelWidgetClass reqFrame4 {
+                 visible 1
+                 ignorepointer 1
+                 color 0.5294 0.5333 0.5412 0.6275
+                 position 10 10
+                 size 48 48
+                 hexactpos 1
+                 vexactpos 1
+                 hexactsize 1
+                 vexactsize 1
+                 style editor_quad_dark
+                 {
+                  PanelWidgetClass PanelTitle3 {
+                   visible 1
+                   ignorepointer 1
+                   color 0.0157 0.0157 0.0157 0.6667
+                   position 0.01772 0.02245
+                   size 0.96616 0.11548
+                   hexactpos 0
+                   vexactpos 0
+                   hexactsize 0
+                   vexactsize 0
+                   style DayZDefaultPanelBottom
+                  }
+                  PanelWidgetClass PanelStockcCount3 {
+                   ignorepointer 1
+                   color 0.0157 0.0157 0.0157 0.6667
+                   position 0.01847 0.86181
+                   size 0.96408 0.10902
+                   hexactpos 0
+                   vexactpos 0
+                   hexactsize 0
+                   vexactsize 0
+                   style DayZDefaultPanelBottom
+                   {
+                    TextWidgetClass StockCountTitle3 {
+                     ignorepointer 1
+                     position 0.02 0.04
+                     size 0.55 0.9
+                     hexactpos 0
+                     vexactpos 0
+                     hexactsize 0
+                     vexactsize 0
+                     style Bold
+                     text "AMOUNT"
+                     font "gui/fonts/etelkatextpro22"
+                     "exact text" 0
+                     "size to text h" 0
+                     "text valign" center
+                    }
+                    TextWidgetClass reqQuant4 {
+                     ignorepointer 1
+                     position 0.56 0
+                     size 0.5 0.9
+                     hexactpos 0
+                     vexactpos 0
+                     hexactsize 0
+                     vexactsize 0
+                     text "50/100"
+                     font "gui/fonts/etelkatextpro22"
+                     "text valign" center
+                    }
+                   }
+                  }
+                  PanelWidgetClass reqPreview4 {
+                   visible 1
+                   ignorepointer 1
+                   position 0 0.15
+                   size 1 0.7
+                   halign center_ref
+                   hexactpos 0
+                   vexactpos 0
+                   hexactsize 0
+                   vexactsize 0
+                  }
+                 }
+                }
+                PanelWidgetClass reqFrame5 {
+                 visible 1
+                 ignorepointer 1
+                 color 0.5294 0.5333 0.5412 0.6275
+                 position 10 10
+                 size 48 48
+                 hexactpos 1
+                 vexactpos 1
+                 hexactsize 1
+                 vexactsize 1
+                 style editor_quad_dark
+                 {
+                  PanelWidgetClass PanelTitle4 {
+                   visible 1
+                   ignorepointer 1
+                   color 0.0157 0.0157 0.0157 0.6667
+                   position 0.01772 0.02245
+                   size 0.96616 0.11548
+                   hexactpos 0
+                   vexactpos 0
+                   hexactsize 0
+                   vexactsize 0
+                   style DayZDefaultPanelBottom
+                  }
+                  PanelWidgetClass PanelStockcCount4 {
+                   ignorepointer 1
+                   color 0.0157 0.0157 0.0157 0.6667
+                   position 0.01847 0.86181
+                   size 0.96408 0.10902
+                   hexactpos 0
+                   vexactpos 0
+                   hexactsize 0
+                   vexactsize 0
+                   style DayZDefaultPanelBottom
+                   {
+                    TextWidgetClass StockCountTitle4 {
+                     ignorepointer 1
+                     position 0.02 0.04
+                     size 0.55 0.9
+                     hexactpos 0
+                     vexactpos 0
+                     hexactsize 0
+                     vexactsize 0
+                     style Bold
+                     text "AMOUNT"
+                     font "gui/fonts/etelkatextpro22"
+                     "exact text" 0
+                     "size to text h" 0
+                     "text valign" center
+                    }
+                    TextWidgetClass reqQuant5 {
+                     ignorepointer 1
+                     position 0.56 0
+                     size 0.5 0.9
+                     hexactpos 0
+                     vexactpos 0
+                     hexactsize 0
+                     vexactsize 0
+                     text "50/100"
+                     font "gui/fonts/etelkatextpro22"
+                     "text valign" center
+                    }
+                   }
+                  }
+                  PanelWidgetClass reqPreview5 {
+                   visible 1
+                   ignorepointer 1
+                   position 0 0.15
+                   size 1 0.7
+                   halign center_ref
+                   hexactpos 0
+                   vexactpos 0
+                   hexactsize 0
+                   vexactsize 0
+                  }
+                 }
+                }
+                PanelWidgetClass reqFrame6 {
+                 visible 1
+                 ignorepointer 1
+                 color 0.5294 0.5333 0.5412 0.6275
+                 position 10 10
+                 size 48 48
+                 hexactpos 1
+                 vexactpos 1
+                 hexactsize 1
+                 vexactsize 1
+                 style editor_quad_dark
+                 {
+                  PanelWidgetClass PanelTitle5 {
+                   visible 1
+                   ignorepointer 1
+                   color 0.0157 0.0157 0.0157 0.6667
+                   position 0.01772 0.02245
+                   size 0.96616 0.11548
+                   hexactpos 0
+                   vexactpos 0
+                   hexactsize 0
+                   vexactsize 0
+                   style DayZDefaultPanelBottom
+                  }
+                  PanelWidgetClass PanelStockcCount5 {
+                   ignorepointer 1
+                   color 0.0157 0.0157 0.0157 0.6667
+                   position 0.01847 0.86181
+                   size 0.96408 0.10902
+                   hexactpos 0
+                   vexactpos 0
+                   hexactsize 0
+                   vexactsize 0
+                   style DayZDefaultPanelBottom
+                   {
+                    TextWidgetClass StockCountTitle5 {
+                     ignorepointer 1
+                     position 0.02 0.04
+                     size 0.55 0.9
+                     hexactpos 0
+                     vexactpos 0
+                     hexactsize 0
+                     vexactsize 0
+                     style Bold
+                     text "AMOUNT"
+                     font "gui/fonts/etelkatextpro22"
+                     "exact text" 0
+                     "size to text h" 0
+                     "text valign" center
+                    }
+                    TextWidgetClass reqQuant6 {
+                     ignorepointer 1
+                     position 0.56 0
+                     size 0.5 0.9
+                     hexactpos 0
+                     vexactpos 0
+                     hexactsize 0
+                     vexactsize 0
+                     text "50/100"
+                     font "gui/fonts/etelkatextpro22"
+                     "text valign" center
+                    }
+                   }
+                  }
+                  PanelWidgetClass reqPreview6 {
+                   visible 1
+                   ignorepointer 1
+                   position 0 0.15
+                   size 1 0.7
+                   halign center_ref
+                   hexactpos 0
+                   vexactpos 0
+                   hexactsize 0
+                   vexactsize 0
+                  }
+                 }
+                }
+                PanelWidgetClass reqFrame7 {
+                 visible 1
+                 ignorepointer 1
+                 color 0.5294 0.5333 0.5412 0.6275
+                 position 10 10
+                 size 48 48
+                 hexactpos 1
+                 vexactpos 1
+                 hexactsize 1
+                 vexactsize 1
+                 style editor_quad_dark
+                 {
+                  PanelWidgetClass PanelTitle6 {
+                   visible 1
+                   ignorepointer 1
+                   color 0.0157 0.0157 0.0157 0.6667
+                   position 0.01772 0.02245
+                   size 0.96616 0.11548
+                   hexactpos 0
+                   vexactpos 0
+                   hexactsize 0
+                   vexactsize 0
+                   style DayZDefaultPanelBottom
+                  }
+                  PanelWidgetClass PanelStockcCount6 {
+                   ignorepointer 1
+                   color 0.0157 0.0157 0.0157 0.6667
+                   position 0.01847 0.86181
+                   size 0.96408 0.10902
+                   hexactpos 0
+                   vexactpos 0
+                   hexactsize 0
+                   vexactsize 0
+                   style DayZDefaultPanelBottom
+                   {
+                    TextWidgetClass StockCountTitle6 {
+                     ignorepointer 1
+                     position 0.02 0.04
+                     size 0.55 0.9
+                     hexactpos 0
+                     vexactpos 0
+                     hexactsize 0
+                     vexactsize 0
+                     style Bold
+                     text "AMOUNT"
+                     font "gui/fonts/etelkatextpro22"
+                     "exact text" 0
+                     "size to text h" 0
+                     "text valign" center
+                    }
+                    TextWidgetClass reqQuant7 {
+                     ignorepointer 1
+                     position 0.56 0
+                     size 0.5 0.9
+                     hexactpos 0
+                     vexactpos 0
+                     hexactsize 0
+                     vexactsize 0
+                     text "50/100"
+                     font "gui/fonts/etelkatextpro22"
+                     "text valign" center
+                    }
+                   }
+                  }
+                  PanelWidgetClass reqPreview7 {
+                   visible 1
+                   ignorepointer 1
+                   position 0 0.15
+                   size 1 0.7
+                   halign center_ref
+                   hexactpos 0
+                   vexactpos 0
+                   hexactsize 0
+                   vexactsize 0
+                  }
+                 }
+                }
+                PanelWidgetClass reqFrame8 {
+                 visible 1
+                 ignorepointer 1
+                 color 0.5294 0.5333 0.5412 0.6275
+                 position 10 10
+                 size 48 48
+                 hexactpos 1
+                 vexactpos 1
+                 hexactsize 1
+                 vexactsize 1
+                 style editor_quad_dark
+                 {
+                  PanelWidgetClass PanelTitle7 {
+                   visible 1
+                   ignorepointer 1
+                   color 0.0157 0.0157 0.0157 0.6667
+                   position 0.01772 0.02245
+                   size 0.96616 0.11548
+                   hexactpos 0
+                   vexactpos 0
+                   hexactsize 0
+                   vexactsize 0
+                   style DayZDefaultPanelBottom
+                  }
+                  PanelWidgetClass PanelStockcCount7 {
+                   ignorepointer 1
+                   color 0.0157 0.0157 0.0157 0.6667
+                   position 0.01847 0.86181
+                   size 0.96408 0.10902
+                   hexactpos 0
+                   vexactpos 0
+                   hexactsize 0
+                   vexactsize 0
+                   style DayZDefaultPanelBottom
+                   {
+                    TextWidgetClass StockCountTitle7 {
+                     ignorepointer 1
+                     position 0.02 0.04
+                     size 0.55 0.9
+                     hexactpos 0
+                     vexactpos 0
+                     hexactsize 0
+                     vexactsize 0
+                     style Bold
+                     text "AMOUNT"
+                     font "gui/fonts/etelkatextpro22"
+                     "exact text" 0
+                     "size to text h" 0
+                     "text valign" center
+                    }
+                    TextWidgetClass reqQuant8 {
+                     ignorepointer 1
+                     position 0.56 0
+                     size 0.5 0.9
+                     hexactpos 0
+                     vexactpos 0
+                     hexactsize 0
+                     vexactsize 0
+                     text "50/100"
+                     font "gui/fonts/etelkatextpro22"
+                     "text valign" center
+                    }
+                   }
+                  }
+                  PanelWidgetClass reqPreview8 {
+                   visible 1
+                   ignorepointer 1
+                   position 0 0.15
+                   size 1 0.7
+                   halign center_ref
+                   hexactpos 0
+                   vexactpos 0
+                   hexactsize 0
+                   vexactsize 0
+                  }
+                 }
+                }
+               }
+              }
+              XComboBoxWidgetClass reqCombo0 {
+               visible 1
+               disabled 0
+               ignorepointer 0
+               position 0.01 0.01
+               size 0.31 0.02
+               hexactpos 0
+               vexactpos 0
+               hexactsize 0
+               vexactsize 0
+               priority 5
+               style Default
+               "no focus" 0
+              }
+              XComboBoxWidgetClass reqCombo1 {
+               visible 1
+               disabled 0
+               ignorepointer 0
+               position 0.34 0.01
+               size 0.31 0.02
+               hexactpos 0
+               vexactpos 0
+               hexactsize 0
+               vexactsize 0
+               priority 5
+               style Default
+               "no focus" 0
+              }
+              XComboBoxWidgetClass reqCombo2 {
+               visible 1
+               disabled 0
+               ignorepointer 0
+               position 0.67 0.01
+               size 0.31 0.02
+               hexactpos 0
+               vexactpos 0
+               hexactsize 0
+               vexactsize 0
+               priority 5
+               style Default
+               "no focus" 0
+              }
+              XComboBoxWidgetClass reqCombo3 {
+               visible 1
+               disabled 0
+               ignorepointer 0
+               position 0.01 0.2725
+               size 0.31 0.02
+               hexactpos 0
+               vexactpos 0
+               hexactsize 0
+               vexactsize 0
+               priority 5
+               style Default
+               "no focus" 0
+              }
+              XComboBoxWidgetClass reqCombo4 {
+               visible 1
+               disabled 0
+               ignorepointer 0
+               position 0.34 0.2725
+               size 0.31 0.02
+               hexactpos 0
+               vexactpos 0
+               hexactsize 0
+               vexactsize 0
+               priority 5
+               style Default
+               "no focus" 0
+              }
+              XComboBoxWidgetClass reqCombo5 {
+               visible 1
+               disabled 0
+               ignorepointer 0
+               position 0.67 0.2725
+               size 0.31 0.02
+               hexactpos 0
+               vexactpos 0
+               hexactsize 0
+               vexactsize 0
+               priority 5
+               style Default
+               "no focus" 0
+              }
+              XComboBoxWidgetClass reqCombo6 {
+               visible 1
+               disabled 0
+               ignorepointer 0
+               position 0.01 0.533
+               size 0.31 0.02
+               hexactpos 0
+               vexactpos 0
+               hexactsize 0
+               vexactsize 0
+               priority 5
+               style Default
+               "no focus" 0
+              }
+              XComboBoxWidgetClass reqCombo7 {
+               visible 1
+               disabled 0
+               ignorepointer 0
+               position 0.345 0.533
+               size 0.31 0.02
+               hexactpos 0
+               vexactpos 0
+               hexactsize 0
+               vexactsize 0
+               priority 5
+               style Default
+               "no focus" 0
+              }
+              XComboBoxWidgetClass reqCombo8 {
+               visible 1
+               disabled 0
+               ignorepointer 0
+               position 0.675 0.533
+               size 0.31 0.02
+               hexactpos 0
+               vexactpos 0
+               hexactsize 0
+               vexactsize 0
+               priority 5
+               style Default
+               "no focus" 0
+              }
+             }
+            }
+            PanelWidgetClass CraftBtnPanel {
+             clipchildren 0
+             ignorepointer 1
+             color 0.5294 0.5333 0.5412 1
+             position 0.01 0
+             size 0.26 0.04
+             halign right_ref
+             valign bottom_ref
+             hexactpos 0
+             vexactpos 0
+             hexactsize 0
+             vexactsize 0
+             style EditorPanel
+             "no focus" 0
+             {
+              ButtonWidgetClass btn_Craft {
+               visible 1
+               disabled 0
+               inheritalpha 0
+               color 0.1098 0.1137 0.1176 0.8471
+               position 0 0
+               size 1 1
+               halign right_ref
+               valign center_ref
+               hexactpos 0
+               vexactpos 0
+               hexactsize 0
+               vexactsize 0
+               style EmptyHighlight
+               text "CRAFT"
+               text_offset 27 2
+               font "gui/fonts/etelkatextpro48"
+              }
+              ImageWidgetClass img_CraftIcon {
+               ignorepointer 1
+               position 0.04 -0.01
+               size 0.23 0.67
+               valign center_ref
+               hexactpos 0
+               vexactpos 0
+               hexactsize 0
+               vexactsize 0
+               image0 "WillowGlade/WG_Crafting/gui/data/crafticon.edds"
+               imageTexture "{AD7B0486223F2C05}WillowGlade/WG_Crafting/gui/data/crafticon.edds"
+               mode blend
+               "src alpha" 1
+               stretch 1
+              }
+             }
+            }
+           }
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   }
+  }
+ }
+}

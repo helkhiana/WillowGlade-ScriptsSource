@@ -1,0 +1,16 @@
+MetaFileClass {
+ Name "{408FC30EEAD9AFFC}WillowGlade/WG_GUI/fonts/oswald-light-24.edds"
+ Author "desktop-c8ct5up"
+ ChangeDate -983275257
+ Configurations {
+  TGAResourceClass PC {
+   SourceFile "oswald-light-24.tga"
+  }
+  TGAResourceClass XBOX_ONE : PC {
+  }
+  TGAResourceClass PS4 : PC {
+  }
+  TGAResourceClass LINUX : PC {
+  }
+ }
+}

@@ -1,0 +1,16 @@
+MetaFileClass {
+ Name "{311EBE1DAD240FD3}WillowGlade/WG_GUI/imagesets/loadingscreens/loadingscreen_bearhunting.edds"
+ Author "desktop-c8ct5up"
+ ChangeDate -1233884921
+ Configurations {
+  PAAResourceClass PC {
+   SourceFile "loadingscreen_bearhunting.paa"
+  }
+  PAAResourceClass XBOX_ONE : PC {
+  }
+  PAAResourceClass PS4 : PC {
+  }
+  PAAResourceClass LINUX : PC {
+  }
+ }
+}

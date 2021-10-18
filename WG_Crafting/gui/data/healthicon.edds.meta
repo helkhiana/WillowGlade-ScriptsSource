@@ -1,0 +1,16 @@
+MetaFileClass {
+ Name "{9FA7FA0EA5DA0C0C}WillowGlade/WG_Crafting/gui/data/healthicon.edds"
+ Author "desktop-c8ct5up"
+ ChangeDate 729524408
+ Configurations {
+  PNGResourceClass PC {
+   SourceFile "healthicon.png"
+  }
+  PNGResourceClass XBOX_ONE : PC {
+  }
+  PNGResourceClass PS4 : PC {
+  }
+  PNGResourceClass LINUX : PC {
+  }
+ }
+}

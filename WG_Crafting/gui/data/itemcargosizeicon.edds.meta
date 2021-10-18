@@ -1,0 +1,16 @@
+MetaFileClass {
+ Name "{F9251D9374A1DCEC}WillowGlade/WG_Crafting/gui/data/itemcargosizeicon.edds"
+ Author "desktop-c8ct5up"
+ ChangeDate 997959864
+ Configurations {
+  PNGResourceClass PC {
+   SourceFile "itemcargosizeicon.png"
+  }
+  PNGResourceClass XBOX_ONE : PC {
+  }
+  PNGResourceClass PS4 : PC {
+  }
+  PNGResourceClass LINUX : PC {
+  }
+ }
+}

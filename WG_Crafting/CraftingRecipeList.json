@@ -1,0 +1,374 @@
+{
+    "craftingRecipesList": [
+        {
+            "ItemClassName": "StoneKnife",
+            "ResultQuantity": 1,
+            "ResultToInventory": 1,
+            "Category": "Melee",
+            "CraftingTime": 10,
+            "Requirements": [
+                {
+                    "RequiredItemClassName": "SmallStone",
+                    "RequiredQuantity": 2
+                }
+            ]
+        },
+        {
+            "ItemClassName": "WG_Improvised_FlintKnife",
+            "ResultQuantity": 1,
+            "ResultToInventory": 1,
+            "Category": "Melee",
+            "CraftingTime": 10,
+            "Requirements": [
+                {
+                    "RequiredItemClassName": "WG_Flint",
+                    "RequiredQuantity": 1
+                },
+                {
+                    "RequiredItemClassName": "DuctTape",
+                    "RequiredQuantity": 50
+                },
+                {
+                    "RequiredItemClassName": "WoodenStick",
+                    "RequiredQuantity": 1
+                }
+            ]
+        },
+        {
+            "ItemClassName": "WG_Improvised_Shiv",
+            "ResultQuantity": 1,
+            "ResultToInventory": 1,
+            "Category": "Melee",
+            "CraftingTime": 10,
+            "Requirements": [
+                {
+                    "RequiredItemClassName": "KitchenKnife",
+                    "RequiredQuantity": 1
+                },
+                {
+                    "RequiredItemClassName": "Whetstone",
+                    "RequiredQuantity": 100
+                }
+            ]
+        },
+        {
+            "ItemClassName": "NailedBaseballBat",
+            "ResultQuantity": 1,
+            "ResultToInventory": 1,
+            "Category": "Melee",
+            "CraftingTime": 10,
+            "Requirements": [
+                {
+                    "RequiredItemClassName": "Nail",
+                    "RequiredQuantity": 12
+                },
+                {
+                    "RequiredItemClassName": "BaseballBat",
+                    "RequiredQuantity": 1
+                }
+            ]
+        },
+        {
+            "ItemClassName": "Spear",
+            "ResultQuantity": 1,
+            "ResultToInventory": 1,
+            "Category": "Melee",
+            "CraftingTime": 10,
+            "Requirements": [
+                {
+                    "RequiredItemClassName": "Bone",
+                    "RequiredQuantity": 1
+                },
+                {
+                    "RequiredItemClassName": "LongWoodenStick",
+                    "RequiredQuantity": 1
+                }
+            ]
+        },
+        {
+            "ItemClassName": "Rope",
+            "ResultQuantity": 1,
+            "ResultToInventory": 1,
+            "Category": "Tools",
+            "CraftingTime": 10,
+            "Requirements": [
+                {
+                    "RequiredItemClassName": "Rag",
+                    "RequiredQuantity": 12
+                }
+            ]
+        },
+        {
+            "ItemClassName": "LongTorch",
+            "ResultQuantity": 1,
+            "ResultToInventory": 1,
+            "Category": "Tools",
+            "CraftingTime": 10,
+            "Requirements": [
+                {
+                    "RequiredItemClassName": "Rag",
+                    "RequiredQuantity": 2
+                },
+                {
+                    "RequiredItemClassName": "LongWoodenStick",
+                    "RequiredQuantity": 1
+                }
+            ]
+        },
+        {
+            "ItemClassName": "Torch",
+            "ResultQuantity": 1,
+            "ResultToInventory": 1,
+            "Category": "Tools",
+            "CraftingTime": 10,
+            "Requirements": [
+                {
+                    "RequiredItemClassName": "Rag",
+                    "RequiredQuantity": 2
+                },
+                {
+                    "RequiredItemClassName": "WoodenStick",
+                    "RequiredQuantity": 1
+                }
+            ]
+        },
+        {
+            "ItemClassName": "ImprovisedSuppressor",
+            "ResultQuantity": 1,
+            "ResultToInventory": 1,
+            "Category": "Tools",
+            "CraftingTime": 10,
+            "Requirements": [
+                {
+                    "RequiredItemClassName": "WaterBottle",
+                    "RequiredQuantity": 1
+                },
+                {
+                    "RequiredItemClassName": "DuctTape",
+                    "RequiredQuantity": 25
+                }
+            ]
+        },
+        {
+            "ItemClassName": "GhillieHood_Tan",
+            "ResultQuantity": 1,
+            "ResultToInventory": 1,
+            "Category": "Ghillie",
+            "CraftingTime": 10,
+            "Requirements": [
+                {
+                    "RequiredItemClassName": "BurlapStrip",
+                    "RequiredQuantity": 2
+                },
+                {
+                    "RequiredItemClassName": "Netting",
+                    "RequiredQuantity": 1
+                }
+            ]
+        },
+        {
+            "ItemClassName": "GhillieBushrag_Tan",
+            "ResultQuantity": 1,
+            "ResultToInventory": 1,
+            "Category": "Ghillie",
+            "CraftingTime": 10,
+            "Requirements": [
+                {
+                    "RequiredItemClassName": "BurlapStrip",
+                    "RequiredQuantity": 4
+                },
+                {
+                    "RequiredItemClassName": "Netting",
+                    "RequiredQuantity": 2
+                }
+            ]
+        },
+        {
+            "ItemClassName": "GhillieSuit_Tan",
+            "ResultQuantity": 1,
+            "ResultToInventory": 1,
+            "Category": "Ghillie",
+            "CraftingTime": 10,
+            "Requirements": [
+                {
+                    "RequiredItemClassName": "BurlapStrip",
+                    "RequiredQuantity": 10
+                },
+                {
+                    "RequiredItemClassName": "Netting",
+                    "RequiredQuantity": 4
+                }
+            ]
+        },
+        {
+            "ItemClassName": "GhillieTop_Tan",
+            "ResultQuantity": 1,
+            "ResultToInventory": 1,
+            "Category": "Ghillie",
+            "CraftingTime": 10,
+            "Requirements": [
+                {
+                    "RequiredItemClassName": "BurlapStrip",
+                    "RequiredQuantity": 6
+                },
+                {
+                    "RequiredItemClassName": "Netting",
+                    "RequiredQuantity": 3
+                }
+            ]
+        },
+        {
+            "ItemClassName": "GhillieAtt_Tan",
+            "ResultQuantity": 1,
+            "ResultToInventory": 1,
+            "Category": "Ghillie",
+            "CraftingTime": 10,
+            "Requirements": [
+                {
+                    "RequiredItemClassName": "BurlapStrip",
+                    "RequiredQuantity": 2
+                },
+                {
+                    "RequiredItemClassName": "Netting",
+                    "RequiredQuantity": 1
+                }
+            ]
+        },
+        {
+            "ItemClassName": "Armband_White",
+            "ResultQuantity": 1,
+            "ResultToInventory": 1,
+            "Category": "Clothes",
+            "CraftingTime": 10,
+            "Requirements": [
+                {
+                    "RequiredItemClassName": "Rag",
+                    "RequiredQuantity": 1
+                },
+                {
+                    "RequiredItemClassName": "SewingKit",
+                    "RequiredQuantity": 10
+                }
+            ]
+        },
+        {
+            "ItemClassName": "CourierBag",
+            "ResultQuantity": 1,
+            "ResultToInventory": 1,
+            "Category": "Clothes",
+            "CraftingTime": 10,
+            "Requirements": [
+                {
+                    "RequiredItemClassName": "BurlapSack",
+                    "RequiredQuantity": 1
+                },
+                {
+                    "RequiredItemClassName": "Rope",
+                    "RequiredQuantity": 10
+                }
+            ]
+        },
+        {
+            "ItemClassName": "ImprovisedBag",
+            "ResultQuantity": 1,
+            "ResultToInventory": 1,
+            "Category": "Clothes",
+            "CraftingTime": 10,
+            "Requirements": [
+                {
+                    "RequiredItemClassName": "WoodenStick",
+                    "RequiredQuantity": 3
+                },
+                {
+                    "RequiredItemClassName": "CourierBag",
+                    "RequiredQuantity": 1
+                }
+            ]
+        },
+        {
+            "ItemClassName": "Bait",
+            "ResultQuantity": 1,
+            "ResultToInventory": 1,
+            "Category": "Fishing",
+            "CraftingTime": 10,
+            "Requirements": [
+                {
+                    "RequiredItemClassName": "Worm",
+                    "RequiredQuantity": 1
+                },
+                {
+                    "RequiredItemClassName": "Hook",
+                    "RequiredQuantity": 1
+                }
+            ]
+        },
+        {
+            "ItemClassName": "Bait",
+            "ResultQuantity": 1,
+            "ResultToInventory": 1,
+            "Category": "Fishing",
+            "CraftingTime": 10,
+            "Requirements": [
+                {
+                    "RequiredItemClassName": "Guts",
+                    "RequiredQuantity": 100
+                },
+                {
+                    "RequiredItemClassName": "Hook",
+                    "RequiredQuantity": 1
+                }
+            ]
+        },
+        {
+            "ItemClassName": "BoneBait",
+            "ResultQuantity": 1,
+            "ResultToInventory": 1,
+            "Category": "Fishing",
+            "CraftingTime": 10,
+            "Requirements": [
+                {
+                    "RequiredItemClassName": "Worm",
+                    "RequiredQuantity": 1
+                },
+                {
+                    "RequiredItemClassName": "BoneHook",
+                    "RequiredQuantity": 1
+                }
+            ]
+        },
+        {
+            "ItemClassName": "BoneBait",
+            "ResultQuantity": 1,
+            "ResultToInventory": 1,
+            "Category": "Fishing",
+            "CraftingTime": 10,
+            "Requirements": [
+                {
+                    "RequiredItemClassName": "Guts",
+                    "RequiredQuantity": 100
+                },
+                {
+                    "RequiredItemClassName": "BoneHook",
+                    "RequiredQuantity": 1
+                }
+            ]
+        },
+        {
+            "ItemClassName": "WoodenCrate",
+            "ResultQuantity": 1,
+            "ResultToInventory": 1,
+            "Category": "Storage",
+            "CraftingTime": 10,
+            "Requirements": [
+                {
+                    "RequiredItemClassName": "WoodenPlank",
+                    "RequiredQuantity": 2
+                },
+                {
+                    "RequiredItemClassName": "Nail",
+                    "RequiredQuantity": 300
+                }
+            ]
+        }
+    ]
+}

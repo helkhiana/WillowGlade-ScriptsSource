@@ -1,0 +1,16 @@
+MetaFileClass {
+ Name "{788AC0E6AC4A7DCE}WillowGlade/WG_GUI/fonts/unicaone-regular-80.edds"
+ Author "desktop-c8ct5up"
+ ChangeDate 1521789288
+ Configurations {
+  TGAResourceClass PC {
+   SourceFile "unicaone-regular-80.tga"
+  }
+  TGAResourceClass XBOX_ONE : PC {
+  }
+  TGAResourceClass PS4 : PC {
+  }
+  TGAResourceClass LINUX : PC {
+  }
+ }
+}

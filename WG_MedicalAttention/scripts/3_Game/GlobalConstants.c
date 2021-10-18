@@ -1,0 +1,5 @@
+const int LIQUID_WINE = 131072;
+const int LIQUID_BEERT = 262144;
+const int LIQUID_MILK = 524288;
+const int LIQUID_WHISKEY = 1048576;
+const int LIQUID_MOONSHINE = 2097152;

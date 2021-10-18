@@ -1,0 +1,15 @@
+MetaFileClass {
+ Name "{F09A23D87178EADD}WillowGlade/WG_GUI/fonts/oswald-light-48.fnt"
+ Author "desktop-c8ct5up"
+ ChangeDate -2055444217
+ Configurations {
+  FNTResourceClass PC {
+  }
+  FNTResourceClass XBOX_ONE : PC {
+  }
+  FNTResourceClass PS4 : PC {
+  }
+  FNTResourceClass LINUX : PC {
+  }
+ }
+}

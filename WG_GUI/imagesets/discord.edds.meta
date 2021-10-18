@@ -1,0 +1,16 @@
+MetaFileClass {
+ Name "{BBA6FCAA47687DEF}WillowGlade/WG_GUI/imagesets/discord.edds"
+ Author "desktop-c8ct5up"
+ ChangeDate 1822468284
+ Configurations {
+  PNGResourceClass PC {
+   SourceFile "discord.png"
+  }
+  PNGResourceClass XBOX_ONE : PC {
+  }
+  PNGResourceClass PS4 : PC {
+  }
+  PNGResourceClass LINUX : PC {
+  }
+ }
+}
